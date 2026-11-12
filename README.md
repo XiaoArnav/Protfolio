@@ -1,6 +1,6 @@
 # Arnav Patel — Portfolio
 
-A clean, modern personal portfolio website built with semantic HTML5 and CSS3.
+Still developing
 
 - **Author**: Arnav Patel ([@XiaoArnav](https://github.com/XiaoArnav))
 - **Live URL**: https://xiaoarnav.github.io/Protfolio/
