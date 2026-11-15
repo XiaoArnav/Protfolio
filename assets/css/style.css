@@ -482,6 +482,13 @@ search#search .search-icon {
   max-width: 820px;
 }
 
+#post-list {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  width: 100%;
+}
+
 .panel-wrapper {
   display: none;
   width: var(--panel-width);
