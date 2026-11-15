@@ -113,8 +113,23 @@
             </span>
           </nav>
 
+          <button type="button" id="sidebar-trigger" class="topbar-btn" aria-label="Toggle Sidebar">
+            <i class="fas fa-bars fa-fw"></i>
+          </button>
+
           <div id="topbar-title">Arnav Patel</div>
 
+          <button type="button" id="search-trigger" class="topbar-btn" aria-label="Search">
+            <i class="fas fa-search fa-fw"></i>
+          </button>
+
+          <search id="search" class="search-box">
+            <i class="fas fa-search fa-fw search-icon"></i>
+            <input class="search-input" id="search-input" type="search" aria-label="Search" autocomplete="off" placeholder="Search...">
+            <kbd class="search-key-hint" title="Press / to search">/</kbd>
+          </search>
+
+          <button type="button" id="search-cancel" class="btn-cancel">Cancel</button>
         </div>
       </header>
 
@@ -140,5 +155,7 @@
   </div>
 
   <div id="mask" class="mask d-none" aria-hidden="true"></div>
+
+  <script defer src="assets/js/app.js"></script>
 </body>
 </html>
