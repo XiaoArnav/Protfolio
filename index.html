@@ -41,10 +41,40 @@
 </head>
 <body>
   
-  <div id="main-wrapper" class="d-flex justify-content-center">
-    <div class="container d-flex flex-column px-xxl-5">
-      <h1 class="visually-hidden">Arnav Patel Portfolio</h1>
+  <aside aria-label="Sidebar" id="sidebar" class="sidebar">
+    <div class="sidebar-inner">
+      
+    </div>
+  </aside>
+
+  <div id="main-wrapper" class="main-wrapper">
+    <div class="content-container">
+      
+      <header id="topbar-wrapper" class="topbar-wrapper" aria-label="Top Bar">
+        <div id="topbar" class="topbar"></div>
+      </header>
+
+      <div class="layout-row">
+        
+        <main id="core-wrapper" class="core-wrapper" aria-label="Main Content">
+          <div id="post-list" class="post-list">
+            
+          </div>
+        </main>
+
+        <aside id="panel-wrapper" class="panel-wrapper" aria-label="Trending Panel">
+          <div class="panel-inner">
+            
+          </div>
+        </aside>
+      </div>
+
+      <footer id="tail-wrapper" class="tail-wrapper" aria-label="Footer">
+        <div class="footer-content"></div>
+      </footer>
     </div>
   </div>
+
+  <div id="mask" class="mask d-none" aria-hidden="true"></div>
 </body>
 </html>
