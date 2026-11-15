@@ -823,6 +823,67 @@ search#search .search-icon {
   box-shadow: 0 2px 6px rgba(214, 93, 14, 0.12);
 }
 
+#search-result-wrapper {
+  width: 100%;
+  padding-top: 1.5rem;
+  padding-bottom: 3rem;
+  display: none;
+}
+
+#search-result-wrapper.active {
+  display: block !important;
+}
+
+#search-result-wrapper .search-result-content {
+  width: 100%;
+  max-width: 820px;
+}
+
+#search-hints {
+  margin-bottom: 2rem;
+}
+
+#search-results {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+#search-results article {
+  padding-bottom: 1.25rem;
+  border-bottom: 1px solid var(--border-color);
+}
+
+#search-results article h2 {
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  line-height: 1.4;
+}
+
+#search-results article h2 a {
+  color: var(--heading-color);
+  transition: color var(--transition-speed) var(--transition-ease);
+}
+
+#search-results article h2 a:hover {
+  color: var(--primary);
+}
+
+#search-results article p {
+  color: var(--text-muted-color);
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+#search-results .no-results {
+  color: var(--text-muted-color);
+  font-size: 1rem;
+  padding: 2rem 0;
+  text-align: center;
+}
+
 .tail-wrapper {
   padding: 2.5rem 0 2rem;
   border-top: 1px solid var(--border-color);
