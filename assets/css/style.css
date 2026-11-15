@@ -630,6 +630,24 @@ search#search .search-icon {
   font-weight: 500;
 }
 
+.card-wrapper .post-meta .pin {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  color: var(--primary);
+  font-weight: 600;
+  font-size: 0.82rem;
+  background-color: rgba(214, 93, 14, 0.08);
+  padding: 0.15rem 0.55rem;
+  border-radius: var(--radius-full);
+}
+
+.card-wrapper .post-meta .pin i {
+  color: var(--primary);
+  font-size: 0.75rem;
+  transform: rotate(30deg);
+}
+
 .panel-wrapper {
   display: none;
   width: var(--panel-width);
