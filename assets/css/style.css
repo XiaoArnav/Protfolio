@@ -749,6 +749,44 @@ search#search .search-icon {
   }
 }
 
+.panel-heading {
+  font-family: 'Lato', var(--font-sans);
+  font-size: 0.85rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  color: var(--heading-color);
+  margin-bottom: 0.85rem;
+}
+
+#access-lastmod {
+  margin-bottom: 2rem;
+}
+
+#access-lastmod ul {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+#access-lastmod li {
+  line-height: 2.1;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-size: 0.88rem;
+}
+
+#access-lastmod li a {
+  color: var(--text-color);
+  transition: color var(--transition-speed) var(--transition-ease);
+}
+
+#access-lastmod li a:hover {
+  color: var(--primary);
+  text-decoration: underline;
+}
+
 .tail-wrapper {
   padding: 2.5rem 0 2rem;
   border-top: 1px solid var(--border-color);
