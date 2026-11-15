@@ -787,6 +787,17 @@ search#search .search-icon {
   text-decoration: underline;
 }
 
+#trending-tags {
+  margin-top: 2rem;
+}
+
+.tag-cloud {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem;
+  margin-top: 0.75rem;
+}
+
 .tail-wrapper {
   padding: 2.5rem 0 2rem;
   border-top: 1px solid var(--border-color);
