@@ -122,4 +122,19 @@ document.addEventListener('DOMContentLoaded', () => {
       closeSearch();
     });
   }
+
+  const backToTop = document.getElementById('back-to-top');
+  window.addEventListener('scroll', () => {
+    if (window.scrollY > 300) {
+      if (backToTop) backToTop.classList.add('show');
+    } else {
+      if (backToTop) backToTop.classList.remove('show');
+    }
+  });
+
+  if (backToTop) {
+    backToTop.addEventListener('click', () => {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+  }
 });
