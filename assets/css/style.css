@@ -557,6 +557,26 @@ search#search .search-icon {
   flex: 1 1 auto;
 }
 
+.card-wrapper .card-title {
+  font-family: 'Lato', var(--font-sans);
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--heading-color);
+  line-height: 1.4;
+  margin-top: 0.25rem;
+  margin-bottom: 0.5rem;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  transition: color var(--transition-speed) var(--transition-ease);
+}
+
+.card-wrapper:hover .card-title {
+  color: var(--primary);
+}
+
 .panel-wrapper {
   display: none;
   width: var(--panel-width);
