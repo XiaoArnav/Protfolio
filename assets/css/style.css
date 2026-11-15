@@ -594,6 +594,42 @@ search#search .search-icon {
   margin-bottom: 0;
 }
 
+.card-wrapper .post-meta {
+  font-size: 0.85rem;
+  color: var(--text-muted-color);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: auto;
+  padding-top: 0.5rem;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.card-wrapper .post-meta .meta-left {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1.25rem;
+}
+
+.card-wrapper .post-meta .meta-item {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+}
+
+.card-wrapper .post-meta i {
+  color: var(--text-muted-color);
+  font-size: 0.85rem;
+}
+
+.card-wrapper .post-meta time,
+.card-wrapper .post-meta .categories {
+  color: var(--text-muted-color);
+  font-weight: 500;
+}
+
 .panel-wrapper {
   display: none;
   width: var(--panel-width);
