@@ -798,6 +798,31 @@ search#search .search-icon {
   margin-top: 0.75rem;
 }
 
+.post-tag {
+  display: inline-block;
+  line-height: 1.2;
+  font-size: 0.82rem;
+  border-radius: var(--radius-full);
+  padding: 0.32rem 0.68rem;
+  color: var(--text-muted-color);
+  background-color: var(--card-bg);
+  border: 1px solid var(--border-color);
+  text-decoration: none;
+  font-family: var(--font-sans);
+  font-weight: 500;
+  transition: all var(--transition-speed) var(--transition-ease);
+  cursor: pointer;
+}
+
+.post-tag:hover {
+  color: var(--primary);
+  border-color: var(--primary);
+  background-color: rgba(214, 93, 14, 0.08);
+  text-decoration: none;
+  transform: translateY(-1px);
+  box-shadow: 0 2px 6px rgba(214, 93, 14, 0.12);
+}
+
 .tail-wrapper {
   padding: 2.5rem 0 2rem;
   border-top: 1px solid var(--border-color);
