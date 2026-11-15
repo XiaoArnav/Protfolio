@@ -436,6 +436,8 @@ search#search .search-icon {
   }
   #sidebar-trigger {
     display: inline-flex;
+    align-items: center;
+    justify-content: center;
   }
   #topbar-title {
     display: block;
@@ -444,9 +446,26 @@ search#search .search-icon {
   }
   #search-trigger {
     display: inline-flex;
+    align-items: center;
+    justify-content: center;
   }
   search#search {
     display: none;
+  }
+
+  #topbar.search-active #sidebar-trigger,
+  #topbar.search-active #topbar-title,
+  #topbar.search-active #search-trigger {
+    display: none;
+  }
+  #topbar.search-active search#search {
+    display: flex;
+    flex: 1;
+    max-width: none;
+    margin-right: 0.5rem;
+  }
+  #topbar.search-active .btn-cancel {
+    display: inline-block;
   }
 }
 
