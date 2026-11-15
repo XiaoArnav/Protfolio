@@ -287,7 +287,63 @@ img {
   backdrop-filter: blur(8px);
   -webkit-backdrop-filter: blur(8px);
   z-index: 50;
-  border-bottom: 1px solid transparent;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.topbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+  width: 100%;
+}
+
+#breadcrumb {
+  font-family: var(--font-sans);
+  font-size: 0.95rem;
+  color: var(--text-muted-color);
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+#breadcrumb a {
+  color: var(--text-muted-color);
+  font-weight: 600;
+  transition: color var(--transition-speed) var(--transition-ease);
+}
+
+#breadcrumb a:hover {
+  color: var(--primary);
+}
+
+#breadcrumb .separator {
+  color: var(--text-muted-color);
+  font-size: 0.75rem;
+  opacity: 0.6;
+}
+
+#topbar-title {
+  display: none;
+  font-family: var(--font-sans);
+  font-weight: 700;
+  font-size: 1.05rem;
+  color: var(--heading-color);
+  text-align: center;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+@media (max-width: 849.98px) {
+  #breadcrumb {
+    display: none;
+  }
+  #topbar-title {
+    display: block;
+    flex: 1;
+    margin: 0 0.5rem;
+  }
 }
 
 .layout-row {
