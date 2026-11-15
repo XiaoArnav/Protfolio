@@ -577,6 +577,23 @@ search#search .search-icon {
   color: var(--primary);
 }
 
+.card-wrapper .card-text.content {
+  font-size: 0.95rem;
+  color: var(--text-muted-color);
+  line-height: 1.6;
+  margin-top: 0;
+  margin-bottom: 0.85rem;
+}
+
+.card-wrapper .card-text.content p {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin-bottom: 0;
+}
+
 .panel-wrapper {
   display: none;
   width: var(--panel-width);
