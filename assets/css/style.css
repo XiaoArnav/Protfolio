@@ -735,11 +735,12 @@ search#search .search-icon {
   display: none;
   width: var(--panel-width);
   flex-shrink: 0;
+  padding-left: 0.5rem;
 }
 
 .panel-inner {
   position: sticky;
-  top: calc(var(--topbar-height) + 1rem);
+  top: calc(var(--topbar-height) + 1.25rem);
 }
 
 @media (min-width: 1200px) {
