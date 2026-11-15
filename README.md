@@ -9,11 +9,11 @@ Still developing
 
 ```
 ├── assets/
-│   └── arnav.jpg      # Profile photo
-├── css/
-│   └── style.css      # Core styles & variables
-├── js/                # Interactive scripts
-├── index.html         # Main entry point
+│   ├── css/
+│   │   └── style.css      # Core styles & variables
+│   ├── img/               # Profile photo, icons & cards
+│   └── js/                # Client-side scripts
+├── index.html             # Main entry point
 └── README.md
 ```
 
