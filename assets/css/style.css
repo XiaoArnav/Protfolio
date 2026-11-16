@@ -1096,12 +1096,22 @@ search#search .search-icon {
   margin-bottom: 1.25rem;
 }
 
+.sidebar-toggle {
+  display: none;
+}
+
+#sidebar-trigger {
+  cursor: pointer;
+}
+
 .mask {
+  display: none;
   position: fixed;
   inset: 0;
   background: rgba(0, 0, 0, 0.4);
   backdrop-filter: blur(2px);
   z-index: 90;
+  cursor: pointer;
   transition: opacity var(--transition-speed) var(--transition-ease);
 }
 
@@ -1110,8 +1120,12 @@ search#search .search-icon {
     transform: translateX(-100%);
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
   }
-  .sidebar.open {
+  .sidebar.open,
+  .sidebar-toggle:checked ~ .sidebar {
     transform: translateX(0);
+  }
+  .sidebar-toggle:checked ~ .mask {
+    display: block;
   }
   .main-wrapper {
     margin-left: 0;

@@ -18,6 +18,7 @@
   <link rel="stylesheet" href="../assets/css/style.css">
 </head>
 <body>
+  <input type="checkbox" id="sidebar-toggle" class="sidebar-toggle" aria-hidden="true">
   
   <aside id="sidebar" class="sidebar" aria-label="Sidebar">
     <div class="sidebar-inner">
@@ -61,6 +62,8 @@
     </div>
   </aside>
 
+  <label for="sidebar-toggle" id="mask" class="mask" aria-hidden="true"></label>
+
   <div id="main-wrapper" class="main-wrapper">
     <div class="content-container">
       
@@ -75,23 +78,11 @@
             </span>
           </nav>
 
-          <button type="button" id="sidebar-trigger" class="topbar-btn" aria-label="Toggle Sidebar">
+          <label for="sidebar-toggle" id="sidebar-trigger" class="topbar-btn" aria-label="Toggle Sidebar">
             <i class="fas fa-bars fa-fw"></i>
-          </button>
+          </label>
 
           <div id="topbar-title">About</div>
-
-          <button type="button" id="search-trigger" class="topbar-btn" aria-label="Search">
-            <i class="fas fa-search fa-fw"></i>
-          </button>
-
-          <search id="search" class="search-box">
-            <i class="fas fa-search fa-fw search-icon"></i>
-            <input class="search-input" id="search-input" type="search" aria-label="Search" autocomplete="off" placeholder="Search...">
-            <kbd class="search-key-hint" title="Press / to search">/</kbd>
-          </search>
-
-          <button type="button" id="search-cancel" class="btn-cancel">Cancel</button>
         </div>
       </header>
 
@@ -110,7 +101,7 @@
             <h2 style="font-size: 1.2rem; font-weight: 700; margin-top: 1.5rem; margin-bottom: 0.5rem; color: var(--heading-color);">Technical Interests</h2>
             <ul style="padding-left: 1.25rem; margin-bottom: 1rem; line-height: 1.8;">
               <li><strong>Frontend:</strong> HTML5, CSS3, Responsive Web Design, Flexbox, CSS Grid</li>
-              <li><strong>Programming:</strong> Python, Java, JavaScript fundamentals</li>
+              <li><strong>Programming:</strong> Python, Java</li>
               <li><strong>Tools &amp; Workflow:</strong> Git, GitHub, Terminal / Command Line, GitHub Pages</li>
               <li><strong>Areas of Interest:</strong> AI &amp; Machine Learning applications, UI/UX aesthetics, Open Source</li>
             </ul>
@@ -145,16 +136,5 @@
       </footer>
     </div>
   </div>
-
-  <aside aria-label="Scroll to Top">
-    <button id="back-to-top" type="button" aria-label="Back to Top">
-      <i class="fas fa-angle-up"></i>
-    </button>
-  </aside>
-
-  <div id="mask" class="mask d-none" aria-hidden="true"></div>
-
-  <script defer src="../assets/js/app.js"></script>
-  <script defer src="../assets/js/mobile-nav.js"></script>
 </body>
 </html>

@@ -39,13 +39,14 @@
   <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
+  <input type="checkbox" id="sidebar-toggle" class="sidebar-toggle" aria-hidden="true">
   
   <aside aria-label="Sidebar" id="sidebar" class="sidebar">
     <div class="sidebar-inner">
       
       <header class="profile-wrapper">
         <a href="/" id="avatar" class="rounded-circle" aria-label="Profile Avatar">
-          <img src="assets/img/avatar.png" width="112" height="112" alt="Arnav Patel avatar" onerror="this.style.display='none'">
+          <img src="assets/img/avatar.png" width="112" height="112" alt="Arnav Patel avatar">
         </a>
         <a class="site-title d-block" href="/">Arnav Patel</a>
         <p class="site-subtitle fst-italic mb-0">AI &amp; ML Engineer</p>
@@ -82,6 +83,8 @@
     </div>
   </aside>
 
+  <label for="sidebar-toggle" id="mask" class="mask" aria-hidden="true"></label>
+
   <div id="main-wrapper" class="main-wrapper">
     <div class="content-container">
       
@@ -94,23 +97,11 @@
             </span>
           </nav>
 
-          <button type="button" id="sidebar-trigger" class="topbar-btn" aria-label="Toggle Sidebar">
+          <label for="sidebar-toggle" id="sidebar-trigger" class="topbar-btn" aria-label="Toggle Sidebar">
             <i class="fas fa-bars fa-fw"></i>
-          </button>
+          </label>
 
           <div id="topbar-title">Arnav Patel</div>
-
-          <button type="button" id="search-trigger" class="topbar-btn" aria-label="Search">
-            <i class="fas fa-search fa-fw"></i>
-          </button>
-
-          <search id="search" class="search-box">
-            <i class="fas fa-search fa-fw search-icon"></i>
-            <input class="search-input" id="search-input" type="search" aria-label="Search" autocomplete="off" placeholder="Search...">
-            <kbd class="search-key-hint" title="Press / to search">/</kbd>
-          </search>
-
-          <button type="button" id="search-cancel" class="btn-cancel">Cancel</button>
         </div>
       </header>
 
@@ -388,23 +379,6 @@
         </aside>
       </div>
 
-      <div id="search-result-wrapper" class="search-result-wrapper" aria-label="Search Results">
-        <div class="search-result-content">
-          <div id="search-hints">
-            <h2 class="panel-heading">Trending Tags</h2>
-            <div class="tag-cloud">
-              <a class="post-tag" href="#">ai-ml</a>
-              <a class="post-tag" href="#">web-development</a>
-              <a class="post-tag" href="#">html-css</a>
-              <a class="post-tag" href="#">python</a>
-              <a class="post-tag" href="#">open-source</a>
-              <a class="post-tag" href="#">git</a>
-            </div>
-          </div>
-          <div id="search-results" class="search-results"></div>
-        </div>
-      </div>
-
       <footer id="tail-wrapper" class="tail-wrapper" aria-label="Site Info">
         <footer>
           <p>© <time>2026</time> <a href="https://github.com/XiaoArnav">Arnav Patel</a>. <span>All rights reserved.</span></p>
@@ -413,16 +387,5 @@
       </footer>
     </div>
   </div>
-
-  <aside aria-label="Scroll to Top">
-    <button id="back-to-top" type="button" aria-label="Back to Top">
-      <i class="fas fa-angle-up"></i>
-    </button>
-  </aside>
-
-  <div id="mask" class="mask d-none" aria-hidden="true"></div>
-
-  <script defer src="assets/js/app.js"></script>
-  <script defer src="assets/js/mobile-nav.js"></script>
 </body>
 </html>
