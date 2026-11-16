@@ -2,9 +2,6 @@
 
 Personal portfolio website built with HTML5, CSS3, and JavaScript for Web Development Lab.
 
-- **Live Site:** [https://xiaoarnav.github.io/Protfolio/](https://xiaoarnav.github.io/Protfolio/)
-- **Author:** Arnav Patel ([@XiaoArnav](https://github.com/XiaoArnav))
-
 ## Overview
 This repository contains my personal developer portfolio website. It features a responsive multi-column layout, interactive project showcase, client-side search, and an about me section.
 
@@ -39,11 +36,3 @@ Protfolio/
 - **JavaScript (Vanilla):** DOM manipulation, live search filtering, mobile drawer navigation
 - **FontAwesome:** Interface icons
 - **Google Fonts:** Lato and Source Sans Pro
-
-## Running Locally
-Clone the repository and open `index.html` in any web browser:
-```bash
-git clone https://github.com/XiaoArnav/Protfolio.git
-cd Protfolio
-open index.html
-```
