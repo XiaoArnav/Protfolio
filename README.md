@@ -6,14 +6,14 @@ Personal portfolio website built with HTML5, CSS3, and JavaScript for Web Develo
 - **Author:** Arnav Patel ([@XiaoArnav](https://github.com/XiaoArnav))
 
 ## Overview
-This repository contains my personal developer portfolio website. It features a responsive multi-column layout, interactive project showcase, client-side search, and dedicated pages for browsing projects by category, tag, and date.
+This repository contains my personal developer portfolio website. It features a responsive multi-column layout, interactive project showcase, client-side search, and an about me section.
 
 ## Features
 - **Responsive Layout:** Works smoothly on mobile, tablet, and desktop screens.
 - **Sidebar Navigation:** Quick navigation with active page indicator and social links.
 - **Project Showcase:** Highlights recent work and contributions with preview cards.
 - **Live Search:** Instant client-side search filtering by project title, description, and keywords.
-- **Organized Sections:** Dedicated sub-pages for Categories, Tags, Archives (timeline), and About Me.
+- **About Page:** Dedicated bio page covering technical interests and background.
 - **Light Theme:** Clean, minimal light aesthetic with smooth hover effects.
 
 ## Project Structure
@@ -29,12 +29,6 @@ Protfolio/
 │       └── mobile-nav.js      # Mobile drawer navigation script
 ├── about/
 │   └── index.html             # About me page
-├── categories/
-│   └── index.html             # Projects organized by category
-├── tags/
-│   └── index.html             # Projects organized by tags
-├── archives/
-│   └── index.html             # Chronological project timeline
 ├── index.html                 # Home page
 └── README.md                  # Project documentation
 ```
