@@ -31,4 +31,4 @@ Protfolio/
 - **HTML5:** Semantic document markup
 - **CSS3:** Flexbox, CSS Grid, media queries, CSS variables
 - **FontAwesome:** Interface icons
-- **Google Fonts:** Lato and Source Sans Pro
+- **Google Fonts:** Lato and Source Sans
