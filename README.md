@@ -3,14 +3,14 @@
 Personal portfolio website built with semantic HTML5 and CSS3 for Web Development Lab.
 
 ## Overview
-This repository contains my personal developer portfolio website. It features a clean, responsive multi-column layout, project showcase cards, and an about me section built entirely with semantic HTML5 and CSS3.
+This repository contains my personal developer portfolio website. It features a clean, responsive multi-column layout, project showcase cards, and dedicated sections for categories, tags, archives timeline, and about me built entirely with semantic HTML5 and CSS3.
 
 ## Features
 - **Pure HTML & CSS:** Built without JavaScript, focusing on clean semantic markup and modern CSS.
 - **Responsive Layout:** Works smoothly on mobile, tablet, and desktop screens.
 - **Sidebar Navigation:** Quick navigation with active page indicator and social links.
 - **Project Showcase:** Highlights recent work and contributions with preview cards.
-- **About Page:** Dedicated bio page covering technical interests and background.
+- **Organized Sections:** Dedicated pages for Categories, Tags, Archives (timeline), and About Me.
 - **Light Theme:** Clean, minimal light aesthetic with smooth hover effects.
 
 ## Project Structure
@@ -23,6 +23,12 @@ Protfolio/
 │       └── avatar.png         # Profile photo
 ├── about/
 │   └── index.html             # About me page
+├── categories/
+│   └── index.html             # Projects organized by category
+├── tags/
+│   └── index.html             # Projects organized by tags
+├── archives/
+│   └── index.html             # Chronological project timeline
 ├── index.html                 # Home page
 └── README.md                  # Project documentation
 ```
